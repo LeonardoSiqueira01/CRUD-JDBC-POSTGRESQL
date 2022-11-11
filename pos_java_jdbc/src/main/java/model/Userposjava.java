@@ -25,7 +25,9 @@ public String getEmail() {
 public void setEmail(String email) {
 	this.email = email;
 }
-
-
+public String toString() {
+	return "Userposjava [id=" + id + ", nome=" + nome + ", email=" + email + "]";
+}
+ 
 
 }
