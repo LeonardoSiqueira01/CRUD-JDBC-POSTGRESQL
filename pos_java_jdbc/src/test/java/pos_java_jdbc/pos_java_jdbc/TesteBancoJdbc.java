@@ -14,7 +14,6 @@ public class TesteBancoJdbc {
 	public void initBanco() {
 		UserPosDao userPosDao = new UserPosDao();
 		Userposjava userposjava = new Userposjava();
-		userposjava.setId(0L);
 		userposjava.setNome("Carol Gomes");
 		userposjava.setEmail("spacegomes@hotmail.com");
 		userPosDao.salvar(userposjava);
