@@ -45,4 +45,16 @@ public class TesteBancoJdbc {
 		}
 	}
 	
+	@Test
+	public void initAtualizar() {
+		UserPosDao dao = new UserPosDao();
+		try {
+			Userposjava objetoBanco = dao.buscar(1L);
+			objetoBanco.setNome("Daniel Siqueira ");
+			dao.atualizar(objetoBanco);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
 }
